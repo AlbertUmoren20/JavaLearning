@@ -65,14 +65,14 @@ class Employee{
     public Float getSalary(){
         return salary;
     }
-    public void setName(){
-        this.name = name;
-    }
-    public void setSalary(){
-        this.salary = salary
-    }
+    // public void setName(){
+    //     this.name = name;
+    // }
+    // public void setSalary(){
+    //     this.salary = salary
+    // }
 
-    public getEmployees(){
+    public void getEmployees(){
         Employee emp1 = new Employee("John", 50000f);
         Employee emp2 = new Employee("Jane", 60000f);
         System.out.println("Employee 1: " + emp1.getName() + ", Salary: " + emp1.getSalary());
