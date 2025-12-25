@@ -8,7 +8,7 @@ enum Day{
     Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday;
 }
 
-public class EnumExample{
+public class Enums{
     public static void main (String [] args){
         Day today = Day.Friday;
         System.out.println("Today is: " + today);
@@ -21,5 +21,28 @@ public class EnumExample{
         System.out.println("Today is: " + today.values()[1]);
         System.out.println("Today is: " + today.values()[2]);
         System.out.println("Today is: " + today.values()[3]);
+
+
+        
+        switch(today){
+            case Monday;
+            System.out.println("Start of the week!");
+            break;  
+            case Friday;
+            System.out.println("Almost weekend!")
+            break:
+            case Saturday;
+            break;
+            case Sunday;
+            System.out.println("Weekend!")
+            break;
+            default:
+                System.out.println("Mid week days")
+        }
+
+        //Loop through the days
+        for (Day d : Day.values())
+        System.out.println(d);
     }
-}
+
+} 
